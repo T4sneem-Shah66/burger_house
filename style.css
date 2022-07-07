@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+    list-style: none;
+}
+
+:root{
+    --color-yellow:#ffc657;
+    --color-brown:#3d2514;
+
+    --font-regular: 'Times New Roman', Times, serif;
+    --font-bolder:'Bitter', serif;
+
+    --transition:all 300ms ease;
+}
+
+body{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    line-height: 1.7rem;
+    color: var(--color-brown);
+    background: #ffffff;
+}
+
+/* ======== COMMON START ======= */
+.container{
+    margin: 0 auto;
+    width: 90%;
+    /* border: 1px solid rgb(31, 29, 29); */
+}
+/* ======== COMMON ENDED ======= */
+
+/* ======== NAV START ======= */
+nav{
+    position: fixed;
+    width: 100vw;
+    background: transparent;
+    z-index: 999;
+    /* overflow: hidden; */
+}
+.nav_container{
+    margin: 0 4.5%;
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+
+.logo{
+    float: left;
+    /* border: 1px solid purple; */
+}
+.logo img{
+    width: 100%;
+}
+
+
+.more{
+    width: 45%;
+    float: right;
+    /* border: 1px solid aqua; */
+    overflow: hidden;
+}
+
+.phone{
+    position: relative;
+    width: 65%;
+    float: right;
+    overflow: hidden;
+    /* border: 1px solid palegreen; */
+    overflow: hidden;
+}
+.bike{
+    float: left;
+    margin-left: 10%;
+    /* border: 1px solid red; */
+}
+.bike img{
+    width: 100%;
+    height: 100%;
+}
+.phone p{
+    position: absolute;
+    top: 7px;
+    right: 0.3px;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.nav_bar{
+    margin-top: 3rem;
+    display: flex;
+    /* border: 1px solid purple; */
+}
+.nav_bar li{
+    padding-right: 0;
+    padding-left: 76px;
+    padding-top: 17px;
+    padding-bottom: 2rem;
+}
+.nav_bar li a{
+    font-size: 18pt;
+    color: var(--color-brown);
+    transition: all 200ms ease;
+}
+.nav_bar li a:hover{
+    border-bottom: 7px solid var(--color-brown);
+}
+/* ======== NAV ENDED ======= */
+
+/* ======== HEADER START ========= */
+header{
+    height: 60.5vw;
+    position: relative;
+    top: 0;
+    background-image: url(./images/banner.png);
+    background-repeat: no-repeat;
+    border: 1px solid var(--color-yellow);
+}
+.header_container{
+    margin-top: 22%;
+}
+.header_container p{
+    display: inline-block;
+    font-size: 20pt;
+    padding: 11px;
+    border: 2.5px dashed var(--color-brown);
+}
+.header_container h2{
+    margin: 7% 0 0;
+    font-family: 'Bitter', serif;
+    font-size: 8rem;
+    font-weight: 900;
+    text-shadow: 0px 7px #ffffff;
+}
+.header_container .h2{
+    margin-top: 6%;
+    font-size: 4rem;
+}
+/* ======== HEADER ENDED ========= */
+
+/* ======== BURGER IMAGES START ========= */
+section{}
+
+.burger_img{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+
+.left{
+    width: 45%;
+    height: 420px;
+    float: left;
+    /* border: 1px solid blue; */
+}
+.left img{
+    width: 100%;
+    height: 100%;
+}
+
+.right{
+    width: 45%;
+    height: 420px;
+    float: right;
+    /* border: 1px solid red; */
+}
+
+.right_bottom{
+    margin-top: 30px;
+}
+/* ======== BURGER IMAGES ENDED =========*/
+
+/* ======== BURGER ORDER START ======= */
+.burger_order{
+    padding-bottom: 134px;
+    /* border: 1px solid red; */
+}
+
+.headline{
+    text-align: center;
+}
+.headline p{
+    margin-bottom: 3rem;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: var(--color-yellow);
+}
+.big_article{
+    text-align: center;
+    align-items: center;
+}
+.big_article h1{
+    margin-bottom: 32px;
+    font-family: var(--font-bolder);
+    font-size: 2.5rem;
+}
+.big_article p{
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    width: 70%;
+    font-family: var(--font-regular);
+}
+.order{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    text-align: center;
+}
+.icon_pic{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.icon_pic img{
+    height: 100%;
+    /* border: 1px solid palegreen; */
+}
+.order h5{
+    margin-bottom: 1.5rem;
+    font-size: 20pt;
+}
+.order p{
+    margin: 0 auto 40px;
+    font-family: var(--font-regular);
+    width: 75%;
+}
+.order button{
+    width: 50%;
+    padding: 11px;
+    background-color: red;
+    border-radius: 5px;
+    font-family: var(--font-bolder);
+    font-size: larger;
+    color: white;
+    transition: var(--transition);
+}
+.order button:hover{
+    cursor: pointer;
+    width: 53%;
+    font-size: x-large;
+    box-shadow: 5px 3px 8px grey;
+}
+.s_a1 img, .s_a3 img{
+    height: 320px;
+}
+
+.s_a2 img{
+    width: 100%;
+    height: 320px;
+}
+
+/* ======== BURGER ORDER ENDED ======= */
+
+/* ======== EVENTS START ======== */
+.events{
+    width: 86%;
+    /* height: 50vw; */
+    margin-bottom: 100px;
+}
+.card{
+    padding-top: 1.7rem;
+    padding-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: 40% 55%;
+    gap: 5%;
+    border-radius: 15px;
+    box-shadow: 10px 14px 20px grey;
+    /* border: 1px solid blueviolet; */
+}
+.left_card{
+    padding-top: 40px;
+    padding-left: 54px;
+}
+.left_card .p1{
+    font-size: 18pt;
+    margin-bottom: 1rem;
+}
+.left_card h2{
+    font-family: var(--font-bolder);
+    font-size: 2rem;
+    margin-bottom: 46px;
+}
+.left_card .p2{
+    font-family: var(--font-regular);
+    font-size: 15pt;
+    color: black;
+}
+.right_card_img{
+    width: 95%;
+}
+.right_card img{
+    width: 100%;
+    height: 100%;
+}
+/* ======== EVENTS ENDED ======== */
+
+/* ======== FORM START ======== */
+.form_{
+    background-image: url(./images/banner2.png);
+    background-repeat: no-repeat;
+    height: 57vw;
+}
+.form{
+    padding-top: 140px;
+    text-align: center;
+}
+.form p{
+    font-size: 18pt;
+    margin-bottom: 15px;
+}
+.form h2{
+    margin-bottom: 90px;
+    font-family: var(--font-bolder);
+    font-size: 3rem;
+}
+.inner_form{
+    margin-left: 4.9%;
+}
+
+form input{
+    margin-bottom: 2rem;
+    margin-right: 1.8rem;
+    padding: 11px;
+    font-size: 1.6rem;
+    border: 1px solid rgb(233, 230, 230);
+    border-radius: 5px;
+}
+form button{
+    margin-right: 2.4%;
+    padding: 16px 9% 11px;
+    font-family: var(--font-bolder);
+    font-size: 1.3rem;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}
+form button:hover{
+    cursor: pointer;
+    box-shadow: 5px 3px 8px grey;
+}
+
+/* ======== FORM ENDED ======== */
+
+/* ======== FOOTER START ======= */
+.footer{
+    margin-bottom: 68px;
+    height: 38.5vw;
+    padding-top: 86px;
+    padding-left: 32px;
+    background-image: url(./images/footer.png);
+    color: white;
+}
+.footer1{
+    width: 95%;
+    padding-right: 42px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.footer_right{
+    width:75%;
+}
+.footer_right p{
+    margin-top: 42px;
+    font-family: var(--font-regular);
+    font-size: 1rem;
+}
+
+.footer_left{
+    padding-top: 162px;
+    padding-left: 268px;
+}
+.footer_left p{
+    padding-top: 4px;
+    padding-left: 32px;
+}
+.location{
+    display: flex;
+}
+
+.email{
+    margin-top: 0.5rem;
+    display: flex;
+}
+.email a{
+    color: white;
+}
+.email p a:hover{
+    color: var(--color-yellow);
+}
+.footer2{
+    width: 100%;
+    padding-top: 9rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.icons{
+    margin-left: 70%;
+}
+.icons img{
+    padding-left: 5px;
+}
+/* ======== FOOTER ENDED ======= */
